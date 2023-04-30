@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('slug', 156)->unique();
             $table->text('description')->nullable();
             $table->decimal('price', 8, 2);
+            $table->integer('quantity');
             $table->timestamps();
         });
     }
